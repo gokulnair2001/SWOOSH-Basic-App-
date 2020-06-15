@@ -13,10 +13,14 @@
 		556E23A52494A97900A38265 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 556E23A32494A97900A38265 /* Main.storyboard */; };
 		556E23A72494A97A00A38265 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 556E23A62494A97A00A38265 /* Assets.xcassets */; };
 		556E23AA2494A97A00A38265 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 556E23A82494A97A00A38265 /* LaunchScreen.storyboard */; };
+		55AE317024968662008945C2 /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AE316F24968662008945C2 /* secondViewController.swift */; };
+		55AE317224968670008945C2 /* thirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AE317124968670008945C2 /* thirdViewController.swift */; };
+		55AE317424969503008945C2 /* player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AE317324969503008945C2 /* player.swift */; };
+		55D28D272494F48F00CBAB80 /* ColourButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D28D262494F48F00CBAB80 /* ColourButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		556E239A2494A97900A38265 /* Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		556E239A2494A97900A38265 /* SWOOSH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SWOOSH.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		556E239D2494A97900A38265 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		556E239F2494A97900A38265 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		556E23A12494A97900A38265 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +28,10 @@
 		556E23A62494A97A00A38265 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		556E23A92494A97A00A38265 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		556E23AB2494A97A00A38265 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55AE316F24968662008945C2 /* secondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
+		55AE317124968670008945C2 /* thirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thirdViewController.swift; sourceTree = "<group>"; };
+		55AE317324969503008945C2 /* player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = player.swift; sourceTree = "<group>"; };
+		55D28D262494F48F00CBAB80 /* ColourButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColourButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +56,7 @@
 		556E239B2494A97900A38265 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				556E239A2494A97900A38265 /* Practice.app */,
+				556E239A2494A97900A38265 /* SWOOSH.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,15 +64,43 @@
 		556E239C2494A97900A38265 /* Practice */ = {
 			isa = PBXGroup;
 			children = (
+				556E23B52494E72F00A38265 /* Model */,
+				556E23B42494E72800A38265 /* View */,
+				556E23B32494E71900A38265 /* Controller */,
 				556E239D2494A97900A38265 /* AppDelegate.swift */,
 				556E239F2494A97900A38265 /* SceneDelegate.swift */,
 				556E23A12494A97900A38265 /* ViewController.swift */,
 				556E23A32494A97900A38265 /* Main.storyboard */,
+				55AE316F24968662008945C2 /* secondViewController.swift */,
+				55AE317124968670008945C2 /* thirdViewController.swift */,
 				556E23A62494A97A00A38265 /* Assets.xcassets */,
 				556E23A82494A97A00A38265 /* LaunchScreen.storyboard */,
 				556E23AB2494A97A00A38265 /* Info.plist */,
 			);
 			path = Practice;
+			sourceTree = "<group>";
+		};
+		556E23B32494E71900A38265 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		556E23B42494E72800A38265 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				55D28D262494F48F00CBAB80 /* ColourButton.swift */,
+				55AE317324969503008945C2 /* player.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		556E23B52494E72F00A38265 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,7 +120,7 @@
 			);
 			name = Practice;
 			productName = Practice;
-			productReference = 556E239A2494A97900A38265 /* Practice.app */;
+			productReference = 556E239A2494A97900A38265 /* SWOOSH.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -139,7 +175,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				556E23A22494A97900A38265 /* ViewController.swift in Sources */,
+				55D28D272494F48F00CBAB80 /* ColourButton.swift in Sources */,
+				55AE317224968670008945C2 /* thirdViewController.swift in Sources */,
+				55AE317424969503008945C2 /* player.swift in Sources */,
 				556E239E2494A97900A38265 /* AppDelegate.swift in Sources */,
+				55AE317024968662008945C2 /* secondViewController.swift in Sources */,
 				556E23A02494A97900A38265 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,7 +332,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gokulnair.Practice;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SWOOSH;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -310,7 +350,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gokulnair.Practice;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SWOOSH;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
